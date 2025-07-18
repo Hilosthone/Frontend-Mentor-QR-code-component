@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}   
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: hsl(212, 45%, 89%);
+}
+
+.card{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 1.5rem; /*20px */
+    max-width: 300px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+}
+
+.card img{
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Outfit', sans-serif; /* Correct way to apply the font */
+  font-weight: 700; /* 400 was too light; use 700 for bolder look */
+  color: hsl(218, 44%, 22%);
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.3rem; /* Optional: adjust to your taste */
+}
+
+p {
+  font-family: 'Outfit', sans-serif; /* Consistent font */
+  font-weight: 400;
+  color: hsl(216, 15%, 48%);
+  text-align: center;
+  line-height: 1.4; /* Correct property is line-height, not line-spacing */
+  font-size: 0.9375rem; /* Optional: 15px */
+  padding: 0 10px; /* Optional: padding for breathing space */
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 400px;
+    margin: auto;
+  }
+}
